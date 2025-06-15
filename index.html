@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rajesh Kumar - LIC Development Officer Mumbai | Join as LIC Agent
+    </title>
+    <meta
+      name="description"
+      content="Join LIC as an agent with Rajesh Kumar, experienced Development Officer in Mumbai. Best commission rates, training support, and career growth opportunities."
+    />
+    <meta
+      name="keywords"
+      content="LIC agent, LIC development officer, LIC Mumbai, insurance agent, LIC career, life insurance"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .logo img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffcc00;
+      }
+
+      .mobile-menu {
+        display: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #003366 0%,
+          #0066cc 50%,
+          #ffcc00 100%
+        );
+        color: white;
+        padding: 120px 0 80px;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        border: 2px solid #ffcc00;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-button {
+        background: #ffcc00;
+        color: #003366;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(255, 204, 0, 0.4);
+      }
+
+      /* Section Styles */
+      section {
+        padding: 80px 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #003366;
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #003366, #ffcc00);
+      }
+
+      /* Benefits Section */
+      .benefits {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);
+      }
+
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .benefit-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-left: 5px solid #ffcc00;
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .benefit-icon {
+        font-size: 3rem;
+        color: #0066cc;
+        margin-bottom: 1rem;
+      }
+
+      .benefit-card h3 {
+        color: #003366;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      /* Plans Carousel */
+      .plans {
+        background: white;
+      }
+
+      .carousel-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .plan-card {
+        min-width: 100%;
+        background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+        color: white;
+        padding: 3rem;
+        text-align: center;
+      }
+
+      .plan-card h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #ffcc00;
+      }
+
+      .plan-features {
+        list-style: none;
+        margin: 2rem 0;
+      }
+
+      .plan-features li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 204, 0, 0.8);
+        color: #003366;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border-radius: 50%;
+      }
+
+      .carousel-nav.prev {
+        left: 20px;
+      }
+
+      .carousel-nav.next {
+        right: 20px;
+      }
+
+      /* Calculator */
+      .calculator {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);
+      }
+
+      .calc-container {
+        background: white;
+        padding: 3rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .calc-input {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+      }
+
+      .calc-input:focus {
+        outline: none;
+        border-color: #0066cc;
+      }
+
+      .calc-result {
+        background: linear-gradient(135deg, #003366, #0066cc);
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      /* Contact Section */
+      .contact {
+        background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+        color: white;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .contact-info {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-item i {
+        font-size: 1.5rem;
+        color: #ffcc00;
+        margin-right: 1rem;
+        width: 30px;
+      }
+
+      .qr-code {
+        text-align: center;
+      }
+
+      .qr-placeholder {
+        width: 200px;
+        height: 200px;
+        background: white;
+        border-radius: 15px;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: #003366;
+      }
+
+      /* Footer */
+      footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .social-links {
+        margin: 1rem 0;
+      }
+
+      .social-links a {
+        color: #ffcc00;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+        transition: transform 0.3s;
+      }
+
+      .social-links a:hover {
+        transform: scale(1.2);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .profile-img {
+          width: 150px;
+          height: 150px;
+        }
+
+        .benefits-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fas fa-shield-alt"></i>
+          <span>LIC Portfolio</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content fade-in">
+        <img
+          src="./images/Akshay_photo.jpeg"
+          alt="Rajesh Kumar - LIC Development Officer"
+          class="profile-img"
+        />
+        <h1>Akshay Oza</h1>
+        <p>
+          Development Officer - LIC of India, Mumbai<br />
+          "Your trusted partner for a secure financial future. I help agents
+          build successful careers while serving our community's insurance
+          needs."
+        </p>
+        <a href="#contact" class="cta-button">
+          <i class="fas fa-handshake"></i> Join My Team Today
+        </a>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2 class="section-title">Why Join LIC with Me?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-percentage"></i>
+            </div>
+            <h3>Highest Commission Rates</h3>
+            <p>
+              Earn up to 40% first year commission and 7.5% renewal commission.
+              Additional performance bonuses and incentives for top performers.
+            </p>
+          </div>
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Comprehensive Training</h3>
+            <p>
+              Free training programs, sales techniques, product knowledge, and
+              digital marketing strategies. Continuous skill development
+              support.
+            </p>
+          </div>
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Career Growth</h3>
+            <p>
+              Clear promotion path from Agent to Unit Manager to Branch Manager.
+              Leadership development and mentorship programs.
+            </p>
+          </div>
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Digital Support</h3>
+            <p>
+              Advanced CRM tools, mobile apps, online proposal system, and
+              digital marketing support for better client management.
+            </p>
+          </div>
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Recognition & Rewards</h3>
+            <p>
+              Monthly awards, annual recognition ceremonies, foreign trips, and
+              special incentives for achieving targets.
+            </p>
+          </div>
+          <div class="benefit-card fade-in">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Team Building</h3>
+            <p>
+              Build your own team, earn override commission, and create a
+              sustainable income stream through team development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+      <div class="container">
+        <h2 class="section-title">Best Selling LIC Plans</h2>
+        <div class="carousel-container">
+          <div class="carousel" id="plansCarousel">
+            <div class="plan-card">
+              <h3>LIC Jeevan Anand</h3>
+              <p>Endowment Plan with Life Cover</p>
+              <ul class="plan-features">
+                <li>✓ Life coverage + Maturity benefit</li>
+                <li>✓ Loan facility available</li>
+                <li>✓ Tax benefits under 80C</li>
+                <li>✓ High surrender value</li>
+                <li>✓ Bonus participation</li>
+              </ul>
+              <div class="plan-commission">Commission: Up to 35%</div>
+            </div>
+            <div class="plan-card">
+              <h3>LIC New Endowment Plus</h3>
+              <p>Participating Endowment Plan</p>
+              <ul class="plan-features">
+                <li>✓ Guaranteed maturity benefit</li>
+                <li>✓ Annual bonus participation</li>
+                <li>✓ Death benefit assured</li>
+                <li>✓ Premium payment flexibility</li>
+                <li>✓ Loan against policy</li>
+              </ul>
+              <div class="plan-commission">Commission: Up to 40%</div>
+            </div>
+            <div class="plan-card">
+              <h3>LIC Tech Term</h3>
+              <p>Pure Term Insurance Plan</p>
+              <ul class="plan-features">
+                <li>High life coverage at low cost</li>
+                <li>Online purchase available</li>
+                <li>Level and increasing sum assured</li>
+                <li>Accidental death benefit rider</li>
+                <li>Quick claim settlement</li>
+              </ul>
+              <div class="plan-commission">Commission: Up to 27%</div>
+            </div>
+          </div>
+          <button class="carousel-nav prev" onclick="previousPlan()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-nav next" onclick="nextPlan()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator">
+      <div class="container">
+        <h2 class="section-title">Commission Calculator</h2>
+        <div class="calc-container">
+          <h3 style="text-align: center; color: #003366; margin-bottom: 2rem">
+            Calculate Your Earning Potential
+          </h3>
+          <input
+            type="number"
+            class="calc-input"
+            id="premium"
+            placeholder="Enter Annual Premium (₹)"
+          />
+          <input
+            type="number"
+            class="calc-input"
+            id="policies"
+            placeholder="Number of Policies per Month"
+          />
+          <input
+            type="range"
+            class="calc-input"
+            id="commission"
+            min="25"
+            max="40"
+            value="35"
+            oninput="updateCommission(this.value)"
+          />
+          <div style="text-align: center; margin: 10px 0">
+            Commission Rate: <span id="commissionDisplay">35%</span>
+          </div>
+          <button
+            class="cta-button"
+            onclick="calculateEarnings()"
+            style="width: 100%; margin: 20px 0"
+          >
+            Calculate Earnings
+          </button>
+          <div class="calc-result" id="result" style="display: none">
+            <h4>Your Monthly Earnings</h4>
+            <div id="earnings"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" style="color: white">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 style="color: #ffcc00; margin-bottom: 2rem">
+              Contact Information
+            </h3>
+            <div class="contact-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <strong>Akshay Oza</strong><br />
+                Development Officer
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>+91 7499902802</strong><br />
+                Available 9 AM - 7 PM
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>akshayoza121@gmail.com</strong><br />
+                Email for queries
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>LIC Branch Office</strong><br />
+                Fort Branch, Mumbai - 400001<br />
+                Maharashtra, India
+              </div>
+            </div>
+          </div>
+          <div class="qr-code">
+            <h3 style="color: #ffcc00; margin-bottom: 2rem">Scan to Connect</h3>
+            <div class="qr-placeholder">
+              <img
+                src="./images/qr.png"
+                alt="qr-code"
+                height="180rem"
+                width="180rem"
+              />
+            </div>
+            <p>
+              Scan QR code to save contact details<br />and connect on WhatsApp
+            </p>
+            <a
+              href="https://wa.me/917499902802"
+              class="cta-button"
+              style="margin-top: 1rem"
+            >
+              <i class="fab fa-whatsapp"></i> WhatsApp Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>
+          &copy; 2025 Akshay Oza - LIC Development Officer. All rights reserved.
+        </p>
+        <p>LIC of India - Mumbai Division</p>
+      </div>
+    </footer>
+
+    <script>
+      // Carousel functionality
+      let currentPlan = 0;
+      const totalPlans = 3;
+
+      function nextPlan() {
+        currentPlan = (currentPlan + 1) % totalPlans;
+        updateCarousel();
+      }
+
+      function previousPlan() {
+        currentPlan = (currentPlan - 1 + totalPlans) % totalPlans;
+        updateCarousel();
+      }
+
+      function updateCarousel() {
+        const carousel = document.getElementById("plansCarousel");
+        carousel.style.transform = `translateX(-${currentPlan * 100}%)`;
+      }
+
+      // Auto-advance carousel
+      setInterval(nextPlan, 5000);
+
+      // Commission calculator
+      function updateCommission(value) {
+        document.getElementById("commissionDisplay").textContent = value + "%";
+      }
+
+      function calculateEarnings() {
+        const premium =
+          parseFloat(document.getElementById("premium").value) || 0;
+        const policies =
+          parseInt(document.getElementById("policies").value) || 0;
+        const commission =
+          parseFloat(document.getElementById("commission").value) || 35;
+
+        if (premium > 0 && policies > 0) {
+          const monthlyEarnings = (premium * policies * commission) / 100;
+          const yearlyEarnings = monthlyEarnings * 12;
+
+          document.getElementById("earnings").innerHTML = `
+                    <div style="font-size: 2rem; font-weight: bold; color: #ffcc00;">
+                        ₹${monthlyEarnings.toLocaleString("en-IN")}
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        Annual Earnings: ₹${yearlyEarnings.toLocaleString(
+                          "en-IN"
+                        )}
+                    </div>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                        Based on ${commission}% commission rate
+                    </div>
+                `;
+          document.getElementById("result").style.display = "block";
+        } else {
+          alert("Please enter valid premium amount and number of policies");
+        }
+      }
+
+      // Smooth scrolling for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Mobile menu toggle
+      document
+        .querySelector(".mobile-menu")
+        .addEventListener("click", function () {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.style.display =
+            navLinks.style.display === "flex" ? "none" : "flex";
+        });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".benefit-card").forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>
