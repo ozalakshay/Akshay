@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Rajesh Kumar - LIC Development Officer Mumbai | Join as LIC Agent
-    </title>
+    <title>Akshay Oza - LIC Development Officer Mumbai</title>
     <meta
       name="description"
       content="Join LIC as an agent with Rajesh Kumar, experienced Development Officer in Mumbai. Best commission rates, training support, and career growth opportunities."
@@ -34,7 +32,13 @@
 
       /* Header */
       header {
-        background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+        /* background: linear-gradient(135deg, #003366 0%, #0066cc 100%); */
+        background: linear-gradient(
+          -135deg,
+          #003366 0%,
+          #0066cc 50%,
+          #ffcc00 100%
+        );
         color: white;
         padding: 1rem 0;
         position: fixed;
@@ -61,7 +65,7 @@
       }
 
       .logo img {
-        height: 40px;
+        height: 50px;
         margin-right: 10px;
       }
 
@@ -279,7 +283,11 @@
       .carousel-nav.next {
         right: 20px;
       }
-
+      #development {
+        font-size: 1.8rem;
+        color: #ffcc00;
+        margin-bottom: 0;
+      }
       /* Calculator */
       .calculator {
         background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);
@@ -452,8 +460,7 @@
     <header>
       <nav>
         <div class="logo">
-          <i class="fas fa-shield-alt"></i>
-          <span>LIC Portfolio</span>
+          <img src="./images/lic_logo.png" alt="LIC logo" />
         </div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -477,8 +484,8 @@
           class="profile-img"
         />
         <h1>Akshay Oza</h1>
+        <p id="development">Development Officer - LIC of India, Mumbai</p>
         <p>
-          Development Officer - LIC of India, Mumbai<br />
           "Your trusted partner for a secure financial future. I help agents
           build successful careers while serving our community's insurance
           needs."
@@ -500,7 +507,7 @@
             </div>
             <h3>Highest Commission Rates</h3>
             <p>
-              Earn up to 40% first year commission and 7.5% renewal commission.
+              Earn up to 28% first year commission and 7.5% renewal commission.
               Additional performance bonuses and incentives for top performers.
             </p>
           </div>
@@ -587,7 +594,7 @@
                 <li>✓ Premium payment flexibility</li>
                 <li>✓ Loan against policy</li>
               </ul>
-              <div class="plan-commission">Commission: Up to 40%</div>
+              <div class="plan-commission">Commission: Up to 28%</div>
             </div>
             <div class="plan-card">
               <h3>LIC Tech Term</h3>
@@ -599,7 +606,7 @@
                 <li>Accidental death benefit rider</li>
                 <li>Quick claim settlement</li>
               </ul>
-              <div class="plan-commission">Commission: Up to 27%</div>
+              <div class="plan-commission">Commission: Up to 28%</div>
             </div>
           </div>
           <button class="carousel-nav prev" onclick="previousPlan()">
@@ -642,7 +649,7 @@
             oninput="updateCommission(this.value)"
           />
           <div style="text-align: center; margin: 10px 0">
-            Commission Rate: <span id="commissionDisplay">35%</span>
+            Commission Rate: <span id="commissionDisplay">28%</span>
           </div>
           <button
             class="cta-button"
@@ -693,8 +700,9 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <strong>LIC Branch Office</strong><br />
-                Fort Branch, Mumbai - 400001<br />
-                Maharashtra, India
+                Branch No: 931<br />
+                2nd Floor, LIC Building, Oriental Building<br />
+                Hutatma Chowk, Fort, Mumbai - 400001<br />
               </div>
             </div>
           </div>
@@ -727,10 +735,10 @@
     <footer>
       <div class="footer-content">
         <div class="social-links">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/oza-akshay/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/akshay.oza.357785"><i class="fab fa-facebook"></i></a>
+            <a href="#"><img src="./images/x-twitter-brands-solid.svg" alt="Twitter logo" style="height:1.5rem; width:auto; display:inline-block; vertical-align:middle; filter: invert(67%) sepia(98%) saturate(749%) hue-rotate(359deg) brightness(101%) contrast(101%);"></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>     
         </div>
         <p>
           &copy; 2025 Akshay Oza - LIC Development Officer. All rights reserved.
